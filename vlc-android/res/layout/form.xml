@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>  
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"  
+    android:orientation="vertical"  
+    android:layout_width="fill_parent"  
+    android:layout_height="fill_parent"  
+    android:background="@drawable/form_backg"
+    >  
+ <LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="10dp">
+		
+	<TextView android:id="@+id/name_text" 
+			android:layout_width="wrap_content"
+			android:layout_height="25dp" 
+			android:textColor="@color/white"
+			android:textSize="22sp"
+			android:text="设备名称:" />
+    <EditText  
+    android:id="@+id/dev_name" 
+    android:layout_alignParentRight="true"    
+    android:layout_width="250dp"   
+    android:textSize="22sp"
+    android:layout_height="wrap_content" 
+    android:layout_marginRight="10dp" 
+    android:layout_gravity="top"
+    android:hint="设备名:"/> 
+   </LinearLayout> 
+   <LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp">
+    <TextView android:id="@+id/ip_text" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="@color/white"
+			android:textSize="22sp"
+			android:text="设备IP地址:" />
+    <EditText  
+    android:id="@+id/dev_ip"   
+    android:layout_alignParentRight="true" 
+    android:layout_width="250dp" 
+    android:textSize="22sp" 
+    android:layout_height="wrap_content"  
+    android:layout_marginRight="10dp"
+    android:layout_gravity="top"  
+    android:hint="IP Address"/> 
+   </LinearLayout> 
+   <LinearLayout android:orientation="horizontal"
+		android:layout_width="fill_parent" 
+		android:layout_height="wrap_content"
+		android:layout_marginTop="20dp">
+    <TextView android:id="@+id/smart_text" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="@color/white"
+			android:textSize="22sp"
+			android:text="运动捕捉:" />
+    <Switch  
+        android:id="@+id/dev_status"  
+        android:layout_width="120dip"
+        android:layout_height="30dp"
+        android:layout_marginLeft="10dp"
+        android:textSize="22sp" 
+        android:textOff="关闭"  
+        android:textOn="开启"/> 
+   </LinearLayout>
+   
+      <LinearLayout android:orientation="horizontal"
+          android:layout_height="0dp"
+          android:layout_width="fill_parent"
+          android:gravity="bottom|center"
+          android:layout_weight="1">
+
+          <Button
+              android:id="@+id/dev_del"
+              android:layout_width="150dp"
+              android:layout_height="40dp"
+              android:layout_marginLeft="2dp"
+              android:text="删除设备"
+              android:textSize="22sp" />
+
+          <Button
+              android:id="@+id/option_ok"
+              android:layout_width="150dp"
+              android:layout_height="40dp"
+              android:text="确定"
+              android:textSize="22sp" />
+
+   </LinearLayout>
+</LinearLayout>  

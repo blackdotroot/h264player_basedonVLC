@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+	android:orientation="horizontal" 
+	android:layout_width="fill_parent"
+	android:layout_height="fill_parent">
+	
+	<ImageView android:id="@+id/img" 
+		android:layout_width="70dp"
+		android:layout_height="70dp" 
+		android:layout_margin="5px"/>
+
+	<LinearLayout android:orientation="vertical"
+		android:layout_width="wrap_content" 
+		android:layout_height="wrap_content"
+		android:gravity="center">
+
+		<TextView android:id="@+id/title" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content" 
+			android:textColor="@color/indigo"
+			android:layout_gravity="center"
+			android:textSize="22sp" />
+		<TextView android:id="@+id/info" 
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center" 
+			android:textColor="@color/indigo"
+			android:textSize="13sp" />
+	</LinearLayout>
+	<Button android:id="@+id/option_set"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:background="@drawable/set_opt"
+		android:layout_gravity="center|end" 
+		android:layout_marginLeft="90dp"
+		 />
+	<Button android:id="@+id/view_btn"
+		android:layout_width="50dp"
+		android:layout_height="50dp"
+		android:background="@drawable/open"
+		android:layout_gravity="center|end"
+		android:layout_marginLeft="15dp"  />
+</LinearLayout>

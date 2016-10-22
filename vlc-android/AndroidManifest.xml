@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.lau.vlcdemo"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="7"
+        android:targetSdkVersion="17" />
+	<uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <application
+        android:name="org.videolan.vlc.VLCApplication"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name" >
+        <!-- <activity
+            android:name=".VLCMainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> -->
+        <activity android:name="vlcUI.Main"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="vlcUI.VideoPlayerActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
+         />
+
+        <activity android:name="vlcUI.DevList"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.myform" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="vlcUI.SocketIO"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.socket_io" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="vlcUI.PlayList"
+                  android:label="@string/app_name">
+            <intent-filter>
+                <action android:name="android.intent.action.mylistview3" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

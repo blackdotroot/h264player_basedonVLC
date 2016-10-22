@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" 
+        android:orientation="vertical"
+        android:background="@drawable/list_backg"
+        >
+     <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="horizontal"
+        >
+      <TextView android:id="@+id/dir_discrib"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:textColor="@color/orange"
+          android:textSize="22dp"
+          android:layout_gravity="center"
+          android:text="服务器文件列表"/>
+      <Button android:id="@+id/dir_fresh"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/refresh" /> 
+      </LinearLayout>
+      <Button android:id="@+id/div_forp"
+        android:layout_width="match_parent"
+        android:layout_height="1dip"
+        android:background="@color/indigo" /> 
+      <ListView
+        android:id="@+id/playlist_view"
+        android:layout_width="match_parent"
+        android:divider="@color/indigo"
+        android:dividerHeight="1dip"
+        android:layout_height="match_parent" />
+
+    </LinearLayout>
+
+</RelativeLayout>
